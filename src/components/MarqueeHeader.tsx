@@ -108,15 +108,8 @@ export const MarqueeHeader: React.FC<MarqueeHeaderProps> = ({
             <span className="absolute bottom-1 left-2 font-mono text-xs text-[#D9534F] font-bold">★</span>
             <span className="absolute bottom-1 right-2 font-mono text-xs text-[#D9534F] font-bold">★</span>
 
-            <div className="flex items-center justify-center gap-3 mb-1">
-              <img
-                src="/logo.png"
-                alt="PitchTank Logo"
-                className="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-lg border-2 border-[#231F20] shadow-[2px_2px_0px_#231F20]"
-              />
-              <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-[#D9534F]/10 border border-[#D9534F]/30 text-[#D9534F] font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest">
-                <Sparkles className="w-3 h-3" /> THE TACTILE SHARK TANK SIMULATOR
-              </div>
+            <div className="inline-flex items-center gap-1.5 mb-1 px-3 py-0.5 rounded-full bg-[#D9534F]/10 border border-[#D9534F]/30 text-[#D9534F] font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest">
+              <Sparkles className="w-3 h-3" /> THE TACTILE SHARK TANK SIMULATOR
             </div>
 
             <h1 className="font-serif font-black text-3xl sm:text-5xl md:text-6xl text-[#231F20] tracking-tight uppercase leading-none mt-1 drop-shadow-[2px_2px_0px_#D4C3A3]">
