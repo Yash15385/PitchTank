@@ -63,16 +63,6 @@ export const MarqueeHeader: React.FC<MarqueeHeaderProps> = ({
             )}
           </button>
 
-          {/* Download APK Button */}
-          <a
-            href="/downloads/PitchTank.apk"
-            download="PitchTank.apk"
-            className="flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-[#231F20] bg-[#D9534F] hover:bg-[#C9433F] text-white text-[11px] font-bold shadow-[1px_1px_0px_#231F20] cursor-pointer transition-colors"
-            title="Download Android APK"
-          >
-            <span>📲 APK</span>
-          </a>
-
           {/* API Key Config */}
           <button
             type="button"
