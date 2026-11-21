@@ -186,22 +186,36 @@ export default function PitchTankApp() {
   return (
     <main className="min-h-screen py-6 px-3 sm:px-6 lg:px-8 max-w-5xl mx-auto flex flex-col justify-between">
       <div>
-        {/* PWA Install Banner (If available on mobile) */}
-        {isInstallable && (
-          <div className="mb-4 p-3 bg-[#2E4A3E] text-white rounded-xl border-2 border-[#1E332A] flex items-center justify-between shadow-[3px_3px_0px_#231F20]">
-            <div className="flex items-center gap-2 text-xs font-mono">
-              <Download className="w-4 h-4 text-yellow-300" />
-              <span>Install PitchTank on your home screen as a mobile app!</span>
+        {/* App Download Banner */}
+        <div className="mb-4 p-3.5 bg-[#2E4A3E] text-white rounded-xl border-3 border-[#1E332A] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-[4px_4px_0px_#231F20]">
+          <div className="flex items-center gap-2.5 text-xs font-mono">
+            <Download className="w-5 h-5 text-yellow-300 shrink-0" />
+            <div>
+              <span className="font-bold text-yellow-300">ANDROID APP &amp; APK: </span>
+              <span className="text-stone-200">
+                Download the real installable <strong>PitchTank.apk</strong> file or install as PWA.
+              </span>
             </div>
-            <button
-              type="button"
-              onClick={handleInstallPWA}
-              className="px-3 py-1 bg-yellow-400 hover:bg-yellow-300 text-black text-xs font-mono font-bold rounded border border-black shadow-[1px_1px_0px_#000] cursor-pointer"
-            >
-              Install App
-            </button>
           </div>
-        )}
+          <div className="flex items-center gap-2 w-full sm:w-auto shrink-0">
+            <a
+              href="/downloads/PitchTank.apk"
+              download="PitchTank.apk"
+              className="flex-1 sm:flex-none px-3.5 py-1.5 bg-[#D9534F] hover:bg-[#C9433F] text-white text-xs font-mono font-bold rounded-lg border-2 border-black shadow-[2px_2px_0px_#000] cursor-pointer text-center flex items-center justify-center gap-1.5 active:translate-x-[1px] active:translate-y-[1px]"
+            >
+              <Download className="w-3.5 h-3.5" /> Download APK (.apk)
+            </a>
+            {isInstallable && (
+              <button
+                type="button"
+                onClick={handleInstallPWA}
+                className="px-3 py-1.5 bg-yellow-400 hover:bg-yellow-300 text-black text-xs font-mono font-bold rounded-lg border-2 border-black shadow-[2px_2px_0px_#000] cursor-pointer"
+              >
+                PWA
+              </button>
+            )}
+          </div>
+        </div>
 
         {/* Marquee Header */}
         <MarqueeHeader

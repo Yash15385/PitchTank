@@ -319,6 +319,16 @@ function TankStageContent() {
               </button>
             </div>
 
+            {/* Download APK Button */}
+            <a
+              href="/downloads/PitchTank.apk"
+              download="PitchTank.apk"
+              className="p-1.5 px-2.5 rounded border border-[#231F20] bg-[#D9534F] hover:bg-[#C9433F] text-white text-[11px] font-bold font-mono shadow-[1px_1px_0px_#231F20] cursor-pointer flex items-center gap-1"
+              title="Download Android APK"
+            >
+              <span>📲 APK</span>
+            </a>
+
             {/* Sound Toggle */}
             <button
               type="button"

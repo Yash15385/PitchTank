@@ -1,0 +1,8 @@
+{
+  "appId": "com.pitchtank.app",
+  "appName": "PitchTank",
+  "webDir": "public",
+  "server": {
+    "androidScheme": "https"
+  }
+}
