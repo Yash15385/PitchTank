@@ -411,6 +411,9 @@ function TankStageContent() {
           <span>•</span>
           <span>THE SHARKS PANEL</span>
         </p>
+        <p className="mt-1.5 text-xs font-serif font-medium text-[#57534E]">
+          Made with 💖 by Yash
+        </p>
       </footer>
 
       {/* API Key Modal */}

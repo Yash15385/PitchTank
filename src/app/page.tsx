@@ -282,8 +282,8 @@ export default function PitchTankApp() {
             <ShieldCheck className="w-3.5 h-3.5 text-[#2E4A3E]" /> PWA READY
           </span>
         </p>
-        <p className="mt-1 text-[10px] text-[#A8A29E]">
-          #F5F0E6 Cream • #2E4A3E Chalkboard Green • #D9534F Stamp Red • Next.js App Router &amp; Tailwind CSS
+        <p className="mt-1.5 text-xs font-serif font-medium text-[#57534E]">
+          Made with 💖 by Yash
         </p>
       </footer>
 
